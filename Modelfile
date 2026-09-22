@@ -1,0 +1,26 @@
+# Modelfile for JEV Decision Skill
+# 用于从本地 GGUF 文件注册 Ollama 模型
+
+# 示例：从本地 GGUF 注册（将 <path> 替换为实际路径）
+# FROM <path/to/your/model.gguf>
+
+# 推荐模型（从 Ollama 官方下载）：
+# ollama pull gemma:2b-instruct
+# ollama pull qwen2.5:3b
+# ollama pull llama3.2:3b
+
+# 已有本地 GGUF？按以下步骤注册：
+# 1. 将 Modelfile 中的 FROM 改为你的 GGUF 路径
+# 2. ollama create gemma2-2b-local -f Modelfile
+# 3. 验证：ollama show gemma2-2b-local
+
+# 模型推荐（用于 JEV 决策）：
+# gemma:2b-instruct        - 速度快，中文尚可，推荐首选
+# qwen2.5:3b               - 中文优秀，速度较慢
+# llama3.2:3b              - 英文为主，推理能力强
+# phi3.5:3.8b              - 微软小模型，中文弱
+
+# 模板（Ollama 自动检测，也可显式指定）：
+# ADAPTER base_model
+# TEMPLATE """{{ if .System }}{{ .System }}{{ end }}{{ if .Prompt }}{{ .Prompt }}{{ end }}
+# {{ .Response }}"""
