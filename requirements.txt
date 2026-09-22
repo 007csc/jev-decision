@@ -1,0 +1,4 @@
+# JEV Decision Skill — Python 依赖
+# 零成本，本地运行，无需任何 API Key
+
+requests>=2.31.0,<3.0.0
