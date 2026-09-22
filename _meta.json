@@ -1,0 +1,11 @@
+{
+  "ownerId": 0,
+  "slug": "jev-decision",
+  "version": "1.0.0",
+  "name": "JEV结构化决策",
+  "description": "本地零成本结构化决策引擎（JEV System One 风格）。基于本地 Ollama 模型，支持 Noul/Score/Choice 三种原语决策，零API费用，完全离线。游戏AI实时判断、道具拾取门卫、战斗优先级、危险等级评估利器。",
+  "tags": ["游戏AI", "决策引擎", "JEV", "SystemOne", "本地LLM", "Ollama", "零成本", "结构化决策"],
+  "license": "MIT",
+  "homepage": "https://github.com/qclaw-jev/skill-jev-decision",
+  "repository": "https://github.com/qclaw-jev/skill-jev-decision"
+}
